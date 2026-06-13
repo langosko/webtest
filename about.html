@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Alex Morgan</title>
+    <meta name="description" content="About Alex Morgan — freelance graphic designer based in Prague." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+
+    <nav id="nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo">Alex Morgan</a>
+        <button class="nav-burger" id="navBurger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/services.html" class="nav-link">Services</a></li>
+          <li><a href="/work.html" class="nav-link">Work</a></li>
+          <li><a href="/about.html" class="nav-link">About</a></li>
+          <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="page-bg" aria-hidden="true">
+      <img
+        src="public/mountain_1.jpg"
+        alt=""
+        loading="eager"
+      />
+    </div>
+
+    <section class="section section--first">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-image-wrap reveal">
+            <img
+              src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&q=80"
+              alt="Designer at work"
+              class="about-img"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-text reveal">
+            <p class="label">My story</p>
+            <h2>Turning pixels into purpose.</h2>
+            <p>
+              I'm Alex — a freelance graphic designer with over five years of experience helping
+              brands and creators stand out in a noisy digital world. My work spans social media,
+              print, and digital — always with clarity and intention at the core.
+            </p>
+            <p>
+              I work closely with clients across Europe and beyond, collaborating remotely with
+              the same focus and care you'd get in a studio. Whether you need a single post or a
+              full visual identity, I'm here for it.
+            </p>
+            <p>
+              When I'm not designing, you'll find me hiking through the forests outside Prague,
+              sketching in coffee shops, or hunting for obscure vinyl records.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-num">120+</span>
+                <span class="stat-label">Projects delivered</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">5 yrs</span>
+                <span class="stat-label">Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">40+</span>
+                <span class="stat-label">Happy clients</span>
+              </div>
+            </div>
+            <div style="margin-top: 36px;">
+              <a href="/contact.html" class="btn btn-primary">Get in touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module">
+      import { initNav, initReveal, initParallax } from "/src/nav-shared.js";
+      initNav();
+      initReveal();
+      initParallax();
+    </script>
+  </body>
+</html>
